@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>hackthings blog</title>
+    </head>
+    <body>
+        <div>
+            {%for post in posts%}
+            <h1 style="color: rgb(47, 25, 59); align-content: center;">{{post.title}}</h1>
+            <p style="align-content: center;">{{post.text}}</p>
+            <p>{{post.published_date}}</p>
+            {%endfor%}
+        </div>
+    </body>
+</html>
