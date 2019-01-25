@@ -5,9 +5,10 @@
     <body>
         <div>
             {%for post in posts%}
-            <h1 style="color: rgb(47, 25, 59); align-content: center;">{{post.title}}</h1>
+            <h1 style="color: rgb(47, 25, 59);" align="center">{{post.title}}</h1>
             <p style="align-content: center;">{{post.text}}</p>
-            <p>{{post.published_date}}</p>
+            <p align="right">Published :- {{post.published_date}}</p>
+	    <hr>
             {%endfor%}
         </div>
     </body>
